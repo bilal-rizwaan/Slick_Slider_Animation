@@ -7,7 +7,17 @@ $(document).ready(function() {
         fade: true,
         autoplay: true
     })
+    $('.slider').on('wheel', (function(e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    }));
 })
+
 
 // var words = ['Manage All Your Social Network in One Click'],
 //     part,
