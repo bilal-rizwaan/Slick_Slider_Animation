@@ -1,0 +1,31 @@
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '10px',
+  slidesToShow: 2,
+  centerMode: true,
+//   centerPadding: '60px',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+          centerPadding: '0px',
+        slidesToShow: 1,
+  centerMode: false,
+
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+                    centerPadding: '0px',
+
+        arrows: false,
+        slidesToShow: 1,
+  centerMode: false,
+      }
+    }
+  ]
+});
+		
+});

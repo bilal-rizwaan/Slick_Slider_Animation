@@ -44,7 +44,7 @@ header .links ul li {
 
 header .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: baseline;
     align-items: center;
     margin-top: 4rem;
@@ -82,15 +82,16 @@ header .content .txt button {
     font-size: 19px;
     font-family: system-ui;
     border-radius: 9px;
-    background: rgb(116 182 189);
-    color: #fff;
     transition: all 0.4s ease-in-out;
-}
-
-header .content .txt button:hover {
     background-color: transparent;
     border: 2px solid rgb(255 105 246);
     color: rgb(255 105 246);
+}
+
+header .content .txt button:hover {
+    background: rgb(116 182 189);
+    border: 2px solid rgb(116 182 189);
+    color: #fff;
     /* transform: scale(1.2); */
 }
 
